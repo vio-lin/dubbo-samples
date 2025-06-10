@@ -18,6 +18,8 @@ package org.apache.dubbo.async.boot.provider;
 
 import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.samples.async.boot.HiService;
+import org.apache.dubbo.samples.async.boot.RequestType;
+import org.apache.dubbo.samples.async.boot.ResponseType;
 
 /**
  * @date: 24/3/2023
@@ -29,5 +31,20 @@ public class HiServiceImpl implements HiService {
     public String sayHello(String name) {
         //zSystem.out.println("call : "+name);
         return "hi, your name is: "+name;
+    }
+
+    @Override
+    public ResponseType sayHello2(RequestType name) {
+        return new ResponseType();
+    }
+
+    @Override
+    public ResponseType sayHello3(RequestType name) {
+        return new ResponseType();
+    }
+
+    @Override
+    public ResponseType sayHello4(RequestType name) {
+        return new ResponseType();
     }
 }

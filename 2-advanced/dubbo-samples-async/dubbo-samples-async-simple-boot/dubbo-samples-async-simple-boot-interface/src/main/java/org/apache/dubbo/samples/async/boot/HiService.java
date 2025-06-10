@@ -21,5 +21,12 @@ package org.apache.dubbo.samples.async.boot;
  * @time: 9:33 PM
  */
 public interface HiService {
+
     String sayHello(String name);
+
+    ResponseType sayHello2(RequestType name);
+
+    ResponseType sayHello3(RequestType name);
+
+    ResponseType sayHello4(RequestType name);
 }
